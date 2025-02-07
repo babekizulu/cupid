@@ -105,3 +105,21 @@ header {
     margin-left: 1rem;
     cursor: pointer;
 }
+
+.btn {
+    text-decoration: none;
+    @include flexCenter;
+    padding: 1rem 3rem;
+    background: $red;
+    color: $light;
+    border-radius: 30px;
+    margin: 2rem auto;
+    cursor: pointer;
+    transition: $eio;
+    &:hover {
+        background: $red-active;
+        transition: $eio;
+    }
+}
+
+@import 'Tablet';

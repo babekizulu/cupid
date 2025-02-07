@@ -2,6 +2,8 @@
 import {useState} from "react";
 //icons
 import { IoIosSend } from "react-icons/io";
+//components
+import Link from '../Link';
 
 function Start() {
     //state management
@@ -169,9 +171,6 @@ function Start() {
                         <p>That sounds like a great date! I don't have memory capabilities, but if I did, I would keep that in mind for future dates.</p>
                     </div>
                     <div className="dialogue">
-                        <p>I'm glad you're here with me today.</p>
-                    </div>
-                    <div className="dialogue">
                         <p>What's one thing you find attractive in a person?</p>
                     </div>
                     <div className="reponse-container">
@@ -191,8 +190,9 @@ function Start() {
                         <p>It's been a pleasure talking with you today. Hopefully we can continue this conversation in the future when I've been updated.</p>
                     </div>
                     <div className="dialogue">
-                        <p>By the way, the guy that developed me has a huge crush on you. He's been working on me for a few weeks now and he really wanted to impress you.</p>
+                        <p>By the way, the guy that developed me has a huge crush on you. But don't tell him I said that.</p>
                     </div>
+                    <Link href='/' className="btn">Exit</Link>
                 </div>
             )
         }
